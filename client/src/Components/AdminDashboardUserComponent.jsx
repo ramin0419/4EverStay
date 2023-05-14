@@ -110,9 +110,6 @@ const AdminDashboardUserComponent = () => {
       renderCell: (params) => {
         return (
           <>
-            <Link to={'/user/' + params.row.id}>
-              <Edit>View</Edit>
-            </Link>
             <DeleteOutline
               style={{
                 color: 'red',
@@ -133,7 +130,9 @@ const AdminDashboardUserComponent = () => {
       return;
     }
     try {
-      await axios.delete(`${baseURL}/api/users/delete/${id}`,{withCredentials: true});
+      await axios.delete(`${baseURL}/api/users/delete/${id}`, {
+        withCredentials: true,
+      });
       dispatch({
         type: 'NOTIFICATION_START',
         payload: {
