@@ -2,10 +2,10 @@ import React from 'react';
 import NavAndSidebar from '../Components/NavAndSidebar';
 import styled from 'styled-components';
 import Individualcard from '../Components/Individualcard';
-import kshitiz_image from '../assets/kshitiz.jpg';
+// import kshitiz_image from '../assets/kshitiz.jpg';
 
-import srijan_image from '../assets/srijan.jpg';
-import ramin_image from '../assets/ramin.jpg';
+// import srijan_image from '../assets/srijan.jpg';
+// import ramin_image from '../assets/ramin.jpg';
 
 const StyledParagraph = styled.p`
   display: flex;
@@ -19,38 +19,38 @@ const Styleddiv = styled.div`
   margin-left: 5rem;
   margin-top: 2rem;
 `;
-const team = [
-  {
-    name: 'Kshitiz GC',
-    qualification: 'Frontend Developer',
-    otherInfo:
-      ' he is currently in his 7th semester and has a keen interest in programming. He possesses a strong understanding of coding languages and enjoys exploring new technologies',
-    imgSrc: kshitiz_image,
-    flink: 'https://www.facebook.com/kshitiz.chhetri.777',
-    glink: 'https://github.com/kshitizgc19',
-    llink: 'https://www.linkedin.com/in/kshitiz-gc-102617274/',
-  },
-  {
-    name: 'Srijan Khadka',
-    qualification: 'Backend Developer',
-    otherInfo:
-      'He is currently pursuing his studies and is in his 7th semester. he spends much of his time working with coding language. he enjoys undertaking personal coding projects',
-    imgSrc: srijan_image,
-    glink: 'https://github.com/SrijanKhadka555',
-    flink: 'https://www.facebook.com/srijan.khadka.144',
-    llink: 'https://www.linkedin.com/in/bikrant-bidari-2276391b4/',
-  },
-  {
-    name: 'Ramin Shrestha',
-    qualification: 'Full Stack Developer',
-    otherInfo:
-      'Currently in his 7th semester, he has developed a profound interest in programming and boasts a comprehensive understanding of various coding languages and enjoys exploring new technologies',
-    imgSrc: ramin_image,
-    glink: 'https://github.com/ramin0419',
-    flink: 'https://www.facebook.com/ramin.shrestha.777',
-    llink: 'https://www.linkedin.com/in/ramin-shrestha-ab20051bb/',
-  },
-];
+// const team = [
+//   {
+//     name: 'Kshitiz GC',
+//     qualification: 'Frontend Developer',
+//     otherInfo:
+//       ' he is currently in his 7th semester and has a keen interest in programming. He possesses a strong understanding of coding languages and enjoys exploring new technologies',
+//     imgSrc: kshitiz_image,
+//     flink: 'https://www.facebook.com/kshitiz.chhetri.777',
+//     glink: 'https://github.com/kshitizgc19',
+//     llink: 'https://www.linkedin.com/in/kshitiz-gc-102617274/',
+//   },
+//   {
+//     name: 'Srijan Khadka',
+//     qualification: 'Backend Developer',
+//     otherInfo:
+//       'He is currently pursuing his studies and is in his 7th semester. he spends much of his time working with coding language. he enjoys undertaking personal coding projects',
+//     imgSrc: srijan_image,
+//     glink: 'https://github.com/SrijanKhadka555',
+//     flink: 'https://www.facebook.com/srijan.khadka.144',
+//     llink: 'https://www.linkedin.com/in/bikrant-bidari-2276391b4/',
+//   },
+//   {
+//     name: 'Ramin Shrestha',
+//     qualification: 'Full Stack Developer',
+//     otherInfo:
+//       'Currently in his 7th semester, he has developed a profound interest in programming and boasts a comprehensive understanding of various coding languages and enjoys exploring new technologies',
+//     imgSrc: ramin_image,
+//     glink: 'https://github.com/ramin0419',
+//     flink: 'https://www.facebook.com/ramin.shrestha.777',
+//     llink: 'https://www.linkedin.com/in/ramin-shrestha-ab20051bb/',
+//   },
+// ];
 
 export default function Aboutus() {
   return (
@@ -78,11 +78,11 @@ export default function Aboutus() {
         forward to helping you discover the ideal hostel for your making your
         stay a memorable one.
       </StyledParagraph>
-      <Styleddiv>
+      {/* <Styleddiv>
         {team.map((person, index) => (
           <Individualcard key={index} {...person} />
         ))}
-      </Styleddiv>
+      </Styleddiv> */}
     </>
   );
 }
